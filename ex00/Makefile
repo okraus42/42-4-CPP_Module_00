@@ -10,3 +10,21 @@
 #                                                                              #
 # **************************************************************************** #
 
+NAME		=	megaphone
+SRCS		=	megaphone.cpp
+CPP_FLAGS	=	-Wall -Werror -Wextra -std=c++98
+CPP			=	c++
+
+all:	${NAME}
+
+${NAME}:
+	${CPP} ${CPP_FLAGS} ${SRCS} -o ${NAME}
+
+clean:
+	rm -rf ${NAME}
+
+fclean:	clean
+
+re:	fclean all
+
+.PHONY:	all clean fclean re
