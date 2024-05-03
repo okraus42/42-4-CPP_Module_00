@@ -12,19 +12,24 @@
 
 NAME		=	megaphone
 SRCS		=	megaphone.cpp
+OBJS		=	$(SRCS:.cpp=.o)
 CPP_FLAGS	=	-Wall -Werror -Wextra -std=c++98
 CPP			=	c++
 
-all:	${NAME}
+all:		${NAME}
 
-${NAME}:
-	${CPP} ${CPP_FLAGS} ${SRCS} -o ${NAME}
+${NAME}:	${OBJS}
+			${CPP} ${CPP_FLAGS} ${SRCS} -o ${NAME}
+
+%.o:		%.cpp
+			$(CPP) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -rf ${NAME}
+			rm -rf ${OBJS}
 
-fclean:	clean
+fclean:		clean
+			rm -rf ${NAME}
 
-re:	fclean all
+re:			fclean all
 
 .PHONY:	all clean fclean re

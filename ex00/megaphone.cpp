@@ -24,10 +24,12 @@ int	main(int argc, char **argv)
 	{
 		while (argv[i])
 		{
+			//std::cout << std::toupper(argv[i]);
+			l = 0;
 			while (argv[i][l])
 			{
-				std::cout << (char) toupper(argv[i][l]);
-					l++;
+				std::cout << (char)std::toupper(argv[i][l]);
+				l++;
 			}
 			i++;
 		}
