@@ -6,7 +6,7 @@
 /*   By: okraus <okraus@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 10:52:35 by okraus            #+#    #+#             */
-/*   Updated: 2024/05/04 18:40:31 by okraus           ###   ########.fr       */
+/*   Updated: 2024/05/05 11:51:50 by okraus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ void	Phonebook::search_contact(void)
 		else
 		{
 			tries = 0;
-			std::cerr << "Error:\ninvalid index 3 times." << std::endl
+			std::cerr << "Error:\nex02/thejobofyourdreams.cppinvalid index 3 times." << std::endl
 				<< "Learn how to type a single digit numbers." << std::endl
 				<< "Going back." << std::endl << std::endl;
 		}

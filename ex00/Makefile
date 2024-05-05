@@ -6,23 +6,23 @@
 #    By: okraus <okraus@student.42prague.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 10:52:31 by okraus            #+#    #+#              #
-#    Updated: 2024/05/04 18:18:25 by okraus           ###   ########.fr        #
+#    Updated: 2024/05/05 11:49:35 by okraus           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	megaphone
 SRCS		=	megaphone.cpp
 OBJS		=	$(SRCS:.cpp=.o)
-CPP_FLAGS	=	-Wall -Werror -Wextra -std=c++98
+CPPFLAGS	=	-Wall -Werror -Wextra -std=c++98
 CPP			=	c++
 
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
-			$(CPP) $(CPP_FLAGS) $^ -o $@
+			$(CPP) $(CPPFLAGS) $^ -o $@
 
 %.o:		%.cpp
-			$(CPP) $(CFLAGS) -c $< -o $@
+			$(CPP) $(CPPFLAGS) -c $< -o $@
 
 clean:
 			rm -rf $(OBJS)
