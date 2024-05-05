@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.class.hpp                                  :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: okraus <okraus@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:08:58 by okraus            #+#    #+#             */
-/*   Updated: 2024/05/04 18:20:36 by okraus           ###   ########.fr       */
+/*   Updated: 2024/05/05 14:40:14 by okraus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
 # include <iostream>
 # include <stdlib.h>
 
@@ -36,3 +38,4 @@ class Contact
 		std::string	get_darkest_secret(void);
 		void		check_input(void);
 };
+#endif

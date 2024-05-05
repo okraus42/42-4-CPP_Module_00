@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.class.hpp                                :+:      :+:    :+:   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: okraus <okraus@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:08:52 by okraus            #+#    #+#             */
-/*   Updated: 2024/05/04 18:20:50 by okraus           ###   ########.fr       */
+/*   Updated: 2024/05/05 14:40:33 by okraus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <iostream>
 # include <iomanip>
 # include <stdlib.h>
-# include "Contact.class.hpp"
+# include "Contact.hpp"
 
 #define SIZE_LIMIT		8
 #define	CELL_WIDTH		10

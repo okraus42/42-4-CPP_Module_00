@@ -6,12 +6,12 @@
 #    By: okraus <okraus@student.42prague.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 10:52:31 by okraus            #+#    #+#              #
-#    Updated: 2024/05/05 11:49:41 by okraus           ###   ########.fr        #
+#    Updated: 2024/05/05 14:40:37 by okraus           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	myawesomephonebook
-SRCS		=	myawesomephonebook.cpp PhoneBook.class.cpp Contact.class.cpp
+SRCS		=	myawesomephonebook.cpp PhoneBook.cpp Contact.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 CPPFLAGS	=	-Wall -Werror -Wextra -std=c++98
 CPP			=	c++
